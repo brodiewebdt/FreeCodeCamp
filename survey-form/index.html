@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Survey Form</title>
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+    
+        <div class="page-header">
+          <h1 id="title">Art Magazine Survey Form</h1>
+        </div>
+        <p id="description">Our 12th Annual Subscriber Survey.</p> 
+        
+        <form id="survey-form">
+          <div class="form-control">
+            
+            <label class="text-highlight"  id="name-label" for="name">Name</label>   
+            <input type="text"  id="name" name="name" placeholder="Enter your Name" required>             
+          </div>
+
+          <div class="form-control">
+            <label class="text-highlight" id="email-label" for="email">Email</label>            
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+          </div>
+
+          <div class="form-control">
+
+            <label class="text-highlight" id="number-label" for="age">Age</label>
+            <input type="number" id="number" name="age" class="form-control" min="1" max="100" placeholder="Enter your Age">
+
+          </div>
+    
+          <div class="form-control">
+
+            <label class="text-highlight">How long have you been a subscriber?</label>     
+              <select id="dropdown" name="years">
+                <option value="less-one" name="years">Less than 1 year</option>
+                <option value="less-three" name="years">1-3 years</option>
+                <option value="less-eight" name="years">4-8 years</option>
+                <option value="less-fourteen" name="years">9-14 years</option>
+              </select>
+
+          </div>
+          <div class="form-control">
+
+            <label class="text-highlight">What is your experience level?</label>
+
+            <label for="beginner">
+              <input type="radio" id="beginner" value="beginner" name="experience-level">Beginner</input>
+            </label>
+            <label for="intermediate">
+              <input type="radio" id="intermediate" value="intermediate"
+                name="experience-level">Intermediate</input>
+            </label>
+            <label for="advanced">
+              <input type="radio" id="advanced" value="advanced"
+                name="experience-level">Advanced</input>
+            </label>
+
+          </div>
+          <div class="form-control">
+
+            <label class="text-highlight">What mediums do you use? Check all that apply.</label>
+            <label><input type="checkbox" name="medium" value="graphite">Graphite</label>
+            
+            <label><input type="checkbox" name="medium" value="colored-pencil">Colored Pencil</label>
+            
+            <label><input type="checkbox" name="medium" value="pen-ink">Pen &amp; Ink</label>
+            
+            <label><input type="checkbox" name="medium" value="watercolor">Watercolor</label>
+            
+            <label><input type="checkbox" name="medium" value="acrylic">Acrylic</label>
+            
+            <label><input type="checkbox" name="medium" value="oils">Oils</label>
+            
+            <label><input type="checkbox" name="medium" value="mix-media">Mix Media</label>
+            
+            <label><input type="checkbox" name="medium" value="other">Other</label>
+            
+
+          </div>
+          <div class="form-control">
+
+            <label class="text-highlight" for="comments">Comments and Suggestions</label>
+            <textarea id="comments" name="comments" placeholder="Leave us your thoughts and comments.">          
+            </textarea>
+
+          </div>
+          <div class="form-control">
+
+            <button id="submit" type="submit" value="submit">Submit</button>
+          </div>
+        </form>
+    
+      </div><!-- end container -->
+
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
