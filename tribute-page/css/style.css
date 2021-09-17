@@ -1,0 +1,133 @@
+:root {
+   --dark-blue: #0c2340;
+   --red: #bd3039;
+   --white: #fff; 
+   box-sizing: border-box; 
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 1em;
+    text-align: center;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+
+    border: 1px solid var(--dark-blue);
+}
+
+.text-holder {
+    order: 1;
+}
+
+table {
+    font-size: .875rem;
+    margin: 0 auto;
+    border-spacing: 10px;
+}
+
+figcaption {
+    font-size: .75rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/* Typography */
+h1 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin: .2em 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: .833em;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.7;
+}
+
+.subhead {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Main Section Styles */
+main {
+    padding: 2em 1em;
+}
+.text-accent {
+    color: var(--red);
+    font-weight: 700;
+}
+
+.text-italic {
+    font-size: .75rem;
+    font-style: italic;
+}
+
+/* Footer Styles */
+footer {
+    font-size: .875rem;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+footer a {
+    color: var(--red);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+        max-width: 1000px;
+    }
+
+    header {
+        flex-direction: row;
+        padding: 2em;
+    }
+
+    .text-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 60%;
+    }
+
+    .img-holder {
+        flex-basis: 40%;
+        order: 2;
+    }
+
+    main {
+        padding: 4em 2em 2em;
+    }
+}
