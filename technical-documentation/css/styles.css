@@ -1,0 +1,112 @@
+
+:root {
+  --primary: #20639b;
+  --text-color: #173f5f;
+  --hover-color: #9f240f;
+  --code-block-color: #6bccc3;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Typography */
+h1, h2 {
+  color: var(--primary);
+}
+
+span {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1em 0 1em 0.5em;
+}
+
+.code-block {
+  background-color: var(--code-block-color);
+  color: #000;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+ /* Navigation */
+#navbar {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    top: 0;   
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+ #navbar a {
+    padding:  .5em;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    display: block;
+    border-bottom: 2px solid var(--primary);
+  }
+
+  #navbar a:hover {
+    color: var(--hover-color);
+    font-weight: 700;
+  }
+
+
+/* Media Queries */
+@media (min-width: 900px) {
+    /* The sidebar menu */
+ #navbar {
+    width: 200px;
+    position: fixed; 
+    left: 0;
+    border-right: 2px solid var(--primary);
+  }
+  
+  /* The navigation menu links */
+  span {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1em;
+}
+
+  #navbar a {
+    padding: 0.8em 0.5em 0.8em 1em;
+    display: block;
+    border-bottom: 2px solid var(--primary);
+  }
+  
+ 
+  
+  /* Style page content */
+  #main-doc {
+    margin-left: 200px;
+    padding: 0px 10px;
+  }
+}
+ 
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    #navbar {padding-top: 15px;}
+    #navbar a {font-size: 18px;}
+  } 
